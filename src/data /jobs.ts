@@ -1,20 +1,9 @@
 export const jobs = [
     {
         id: 1,
-        title: 'Punjab Police Inspector',
+        title: 'Recruitment To The Post of Assistant Sub-Inspector (BPS-11) - (2025)',
         org: 'PPSC',
-        deadline: '30 Apr 2025',
+        deadline: '12-05-2025',
     },
-    {
-        id: 2,
-        title: 'Junior Clerk',
-        org: 'SPSC',
-        deadline: '05 May 2025',
-    },
-    {
-        id: 3,
-        title: 'Lecturer - Computer Science',
-        org: 'FPSC',
-        deadline: '10 May 2025',
-    },
+
 ];
