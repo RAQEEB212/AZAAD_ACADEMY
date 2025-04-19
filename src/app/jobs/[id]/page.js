@@ -37,16 +37,7 @@ export default function JobDetailPage({ params }) {
                 )}
             </div>
 
-            {job.Advertisment && (
-                <div className="pt-6">
-                    <Image
-                        src={job.Advertisment}
-                        alt="Advertisement"
-                        width={800}
-                        height={1000}
-                    />
-                </div>
-            )}
+
         </div>
     );
 }

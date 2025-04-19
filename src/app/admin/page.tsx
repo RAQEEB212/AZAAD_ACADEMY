@@ -48,7 +48,7 @@ export default function AdminDashboard() {
                 </div>
 
                 {/* Tests */}
-                <div className="bg-white p-6  mb-32 shadow rounded-md border">
+                <div className="bg-white p-6   shadow rounded-md border">
                     <h3 className="text-xl font-semibold text-purple-700 mb-2">Tests Management</h3>
                     <ul className="text-sm text-gray-600 space-y-1">
                         <li>➕ Add New Test</li>

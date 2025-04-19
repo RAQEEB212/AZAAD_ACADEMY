@@ -5,6 +5,6 @@ export const jobs = [
         Apply: 'https://apply.sts.net.pk/',
         org: 'SINDH POLICE',
         deadline: '12-05-2025',
-        Advertisment: 'https://iba-sts-projects.s3.us-east-2.amazonaws.com/Ad-166.jpg',
+        Advertisment: 'https://res.cloudinary.com/df3ok5t8p/image/upload/v1745076420/AZAAD%20ACADEMY/Advertisements/2025/lbqodf4lrgsvjomfskos.jpg',
     },
 ];
