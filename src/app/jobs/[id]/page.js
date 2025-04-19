@@ -1,5 +1,4 @@
 import { jobs } from '../../../data /jobs'; // Adjust if your path is different
-import Image from 'next/image';
 
 export default function JobDetailPage({ params }) {
     const jobId = Number(params.id);
