@@ -11,7 +11,7 @@ export default function Navbar() {
                 <div className="space-x-6 text-gray-700 font-medium">
                     <Link href="/jobs">Jobs</Link>
                     <Link href="/results">Results</Link>
-                    <Link href="/tests">Tests</Link>
+                    <Link href="/test">Test</Link>
                     <Link href="/admin">Admin</Link>
                 </div>
             </nav>
