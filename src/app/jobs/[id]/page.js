@@ -1,15 +1,13 @@
 // src/app/jobs/[id]/page.jsx
 'use client';
 
-import { useCallback } from 'react';
-import { jobs } from '../../../data /jobs'; // make sure there’s no extra space in the path
+import { jobs } from '../../../data /jobs';  // make sure path is correct
 import { Share2 } from 'lucide-react';
 
 export default function JobDetailPage({ params }) {
     const jobId = Number(params.id);
     const job   = jobs.find(j => j.id === jobId);
 
-    // If no matching job, show an error state
     if (!job) {
         return (
             <div className="p-10 text-red-500">
@@ -18,27 +16,23 @@ export default function JobDetailPage({ params }) {
         );
     }
 
-    // Share logic: only title, this details‑page URL, and the ad URL
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    const shareJob = useCallback(() => {
-        const text = [
-            `📢 ${job.title}`,
-            `View details: ${window.location.href}`,
-            `Preview: ${job.Advertisment}`
-        ].join('\n');
-
-        const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(text)}`;
+    const shareJob = () => {
+        // Only title + link
+        const text = `${job.title}\n${window.location.href}`;
+        const waLink = `https://wa.me/?text=${encodeURIComponent(text)}`;
 
         if (navigator.share) {
-            navigator.share({
-                title: job.title,
-                text,
-                url: window.location.href
-            }).catch(console.error);
+            navigator
+                .share({
+                    title: job.title,
+                    text,
+                    url: window.location.href
+                })
+                .catch(console.error);
         } else {
-            window.open(whatsappUrl, '_blank');
+            window.open(waLink, '_blank');
         }
-    }, [job]);
+    };
 
     return (
         <div className="max-w-4xl mx-auto px-4 py-10 space-y-6">
@@ -50,7 +44,7 @@ export default function JobDetailPage({ params }) {
 
             <div>
                 <h2 className="text-lg font-semibold">Job Description</h2>
-                <p className="mt-2 text-white">{job.description}</p>
+                <p className="mt-2 text-gray-800">{job.description}</p>
             </div>
 
             <div className="flex gap-4 pt-4">
@@ -58,7 +52,7 @@ export default function JobDetailPage({ params }) {
                     href={job.Apply}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-700"
+                    className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
                 >
                     Apply Now
                 </a>
