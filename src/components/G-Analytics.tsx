@@ -1,4 +1,4 @@
-// src/components/Analytics.tsx
+// src/components/GAnalytics.tsx
 'use client';
 
 import { useEffect } from 'react';
@@ -11,7 +11,7 @@ declare global {
     }
 }
 
-export default function Analytics() {
+export default function GAnalytics() {
     const GA_ID = process.env.NEXT_PUBLIC_GA_ID!; // your G-XXXXXXX
 
     useEffect(() => {

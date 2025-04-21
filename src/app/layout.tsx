@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import Analytics from "@/components/Analytics";
+import GAnalytics from "@/components/G-Analytics";
+import { Analytics } from "@vercel/analytics/react"
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import "./globals.css";
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
     <Analytics />
+    <GAnalytics />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
