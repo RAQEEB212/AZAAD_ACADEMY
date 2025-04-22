@@ -17,5 +17,14 @@ export const jobs = [
         org: 'Examination Wing, Lahore High Court, Lahore',
         deadline: '05-05-2025',
         Advertisment: 'https://res.cloudinary.com/df3ok5t8p/image/upload/v1745226614/AZAAD%20ACADEMY/Advertisements/2025/v1ndk9tfb6und9iao7na.jpg', // add your advertisement URL here later
+    },
+    {
+        id: 3,
+        title: 'SUKKUR ELECTRIC POWER COMPANY SUKKUR (SEPCO 2025)',
+        description:'Sukkur Electric Power Company Limited, a public sector power utility providing electricity to 10 districts of upper Sindh, invites applications from talented and dedicated candidates for following positions:',
+        Apply: 'https://apply.sts.net.pk/',
+        org: 'SEPCO ( Sukkur Electric Power Company )',
+        deadline: '20-05-2025',
+        Advertisment: 'https://res.cloudinary.com/df3ok5t8p/image/upload/v1745319895/AZAAD%20ACADEMY/Advertisements/2025/r28fem3v0kxrntpfjoal.jpg',
     }
 ];
