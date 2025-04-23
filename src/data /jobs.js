@@ -26,5 +26,14 @@ export const jobs = [
         org: 'SEPCO ( Sukkur Electric Power Company )',
         deadline: '20-05-2025',
         Advertisment: 'https://res.cloudinary.com/df3ok5t8p/image/upload/v1745319895/AZAAD%20ACADEMY/Advertisements/2025/r28fem3v0kxrntpfjoal.jpg',
+    },
+    {
+        id: 4,
+        title: 'Services, General Administration & Coordination Department, Govt of Sindh (Graduation)-2025',
+        description:'Government of Sindh intends to fill the vacant posts of BPS-05 to BPS-15 requiring qualification of graduation as per Recruitment Rules in all the departments.',
+        Apply: 'https://apply.sts.net.pk/',
+        org: 'SEPCO ( Sukkur Electric Power Company )',
+        deadline: '12-05-2025',
+        Advertisment: 'https://res.cloudinary.com/df3ok5t8p/image/upload/v1745414246/AZAAD%20ACADEMY/Advertisements/2025/oiy2shvc8bufn5pjiyjh.jpg',
     }
 ];
