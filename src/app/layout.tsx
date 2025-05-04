@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "AZAAD ACADEMY",
-  description: "Azaad Academy ",
+  description: "From test prep to job opportunities – Azaad Academy has everything you need, all on one platform, for free! ",
 };
 
 export default function RootLayout({
