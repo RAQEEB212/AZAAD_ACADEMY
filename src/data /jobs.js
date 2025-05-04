@@ -43,6 +43,6 @@ export const jobs = [
         Apply: "https://www.joinpaf.gov.pk/",
         org: "Pakistan Air Force",
         deadline: "13-05-2025",
-        Advertisment: "https://res.cloudinary.com/df3ok5t8p/image/upload/v1745414246/AZAAD%20ACADEMY/Advertisements/2025/oiy2shvc8bufn5pjiyjh.jpg"
+        Advertisment: "https://res.cloudinary.com/df3ok5t8p/image/upload/v1746383444/AZAAD%20ACADEMY/Advertisements/2025/lpbmrftac7p7gx0wlqtz.jpg"
     }
 ];
