@@ -35,5 +35,14 @@ export const jobs = [
         org: 'Government of Sindh',
         deadline: '12-05-2025',
         Advertisment: 'https://res.cloudinary.com/df3ok5t8p/image/upload/v1745414246/AZAAD%20ACADEMY/Advertisements/2025/oiy2shvc8bufn5pjiyjh.jpg',
+    },
+    {
+        id: 5,
+        title: "Pakistan Air Force - Various Positions (2025)",
+        description: "Pakistan Air Force is hiring for various positions requiring candidates with different qualifications. Candidates must pass the physical test criteria and meet the specific educational qualifications as per the advertisement.",
+        Apply: "https://www.joinpaf.gov.pk/",
+        org: "Pakistan Air Force",
+        deadline: "13-05-2025",
+        Advertisment: "https://res.cloudinary.com/df3ok5t8p/image/upload/v1745414246/AZAAD%20ACADEMY/Advertisements/2025/oiy2shvc8bufn5pjiyjh.jpg"
     }
 ];
