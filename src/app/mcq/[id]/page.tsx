@@ -5,11 +5,23 @@ import { mcqQuestions } from '@/data /mcqQuestions';
 import { tests } from '@/data /tests';
 import { useState } from 'react';
 
+// ✅ Define the shape of an MCQ question
+interface McqQuestion {
+    id: number;
+    question: string;
+    options: string[];
+    answer: number;
+}
+
+// ✅ Force mcqQuestions to be typed with numeric keys
+const questionsByTestId: Record<number, McqQuestion[]> = mcqQuestions;
+
 export default function McqTestPage() {
     const { id } = useParams();
     const testId = Number(id);
+
     const test = tests.find((t) => t.id === testId);
-    const questions = mcqQuestions[testId] || [];
+    const questions = questionsByTestId[testId] || [];
 
     const [current, setCurrent] = useState(0);
     const [selected, setSelected] = useState<number | null>(null);

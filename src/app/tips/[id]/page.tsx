@@ -4,11 +4,14 @@ import { useParams } from 'next/navigation';
 import { tips } from '@/data /tips';
 import { tests } from '@/data /tests';
 
+// ✅ Define type for the tips object
+const typedTips: Record<number, string[]> = tips;
+
 export default function TipsPage() {
     const { id } = useParams();
     const testId = Number(id);
     const test = tests.find((t) => t.id === testId);
-    const testTips = tips[testId] || [];
+    const testTips = typedTips[testId] || [];
 
     if (!test) return <p className="p-4">Tips not found.</p>;
 

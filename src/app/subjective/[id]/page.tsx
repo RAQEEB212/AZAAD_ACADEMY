@@ -4,11 +4,18 @@ import { useParams } from 'next/navigation';
 import { subjectiveQuestions } from '@/data /subjectiveQuestions';
 import { tests } from '@/data /tests';
 
+interface SubjectiveQuestion {
+    id: number;
+    question: string;
+}
+
+const questionsByTestId: Record<number, SubjectiveQuestion[]> = subjectiveQuestions;
+
 export default function SubjectiveTestPage() {
     const { id } = useParams();
     const testId = Number(id);
     const test = tests.find((t) => t.id === testId);
-    const questions = subjectiveQuestions[testId] || [];
+    const questions = questionsByTestId[testId] || [];
 
     if (!test) return <p className="p-4">Test not found.</p>;
 
