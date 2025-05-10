@@ -44,5 +44,15 @@ export const jobs = [
         org: "Pakistan Air Force",
         deadline: "13-05-2025",
         Advertisment: "https://res.cloudinary.com/df3ok5t8p/image/upload/v1746383444/AZAAD%20ACADEMY/Advertisements/2025/lpbmrftac7p7gx0wlqtz.jpg"
+    },
+    {
+        id: 6,
+        title: "Sindh Education Literacy Department JST",
+        description: "SIBA Testing Services (STS), on behalf of the School Education & Literacy Department, Government of Sindh, invites applications for the position of Junior Science Teacher (BPS-14). Eligible applicants must have a domicile of the concerned districts and be permanently residing in Sindh province. This position is initially on temporary basis, but is likely to be confirmed based on performance in the future. The required qualifications, age, residence, and other criteria are as follows:\n",
+        Apply: "https://apply.sts.net.pk/?ssid=421",
+        org: "STS",
+        deadline: "20-05-2025",
+        Advertisment: "https://res.cloudinary.com/df3ok5t8p/image/upload/v1746875379/AZAAD%20ACADEMY/Advertisements/2025/weu00hsijaofdxpdaulq.jpg"
     }
+
 ];
